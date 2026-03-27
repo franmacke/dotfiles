@@ -1,0 +1,25 @@
+[core]
+	editor = nvim
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab
+
+[color]
+	ui = auto
+
+[pull]
+	rebase = false
+
+[push]
+	default = simple
+
+[diff]
+	colorMoved = default
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	lg = log --oneline --graph --decorate --all
+	undo = reset --soft HEAD~1
+	unstage = restore --staged

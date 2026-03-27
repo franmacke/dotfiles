@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "tools": {
+    "base": {
+      "name": "Base System Tools",
+      "description": "Essential build tools: build-essential, curl, wget",
+      "dependencies": [],
+      "installer": "installers/base.sh",
+      "category": "system",
+      "required": true
+    },
+    "git": {
+      "name": "Git",
+      "description": "Version control system",
+      "dependencies": ["base"],
+      "installer": "installers/git.sh",
+      "category": "vcs",
+      "required": false
+    },
+    "nodejs": {
+      "name": "Node.js",
+      "description": "JavaScript runtime (LTS)",
+      "dependencies": ["base"],
+      "installer": "installers/nodejs.sh",
+      "category": "runtime",
+      "required": false
+    },
+    "python": {
+      "name": "Python",
+      "description": "Python 3 + pip3 + venv",
+      "dependencies": ["base"],
+      "installer": "installers/python.sh",
+      "category": "runtime",
+      "required": false
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Docker CE + docker-compose",
+      "dependencies": ["base"],
+      "installer": "installers/docker.sh",
+      "category": "devops",
+      "required": false
+    },
+    "zsh": {
+      "name": "Zsh Shell",
+      "description": "Zsh + Oh My Zsh",
+      "dependencies": ["base"],
+      "installer": "installers/zsh.sh",
+      "category": "shell",
+      "required": false
+    },
+    "neovim": {
+      "name": "Neovim",
+      "description": "Modern Vim + vim-plug",
+      "dependencies": ["base"],
+      "installer": "installers/neovim.sh",
+      "category": "editor",
+      "required": false
+    },
+    "alacritty": {
+      "name": "Alacritty",
+      "description": "GPU-accelerated terminal emulator",
+      "dependencies": ["base"],
+      "installer": "installers/alacritty.sh",
+      "category": "terminal",
+      "required": false
+    },
+    "zellij": {
+      "name": "Zellij",
+      "description": "Terminal workspace / multiplexer",
+      "dependencies": ["base"],
+      "installer": "installers/zellij.sh",
+      "category": "terminal",
+      "required": false
+    },
+    "ripgrep": {
+      "name": "Ripgrep",
+      "description": "Fast grep alternative (rg)",
+      "dependencies": ["base"],
+      "installer": "installers/ripgrep.sh",
+      "category": "tools",
+      "required": false
+    },
+    "fzf": {
+      "name": "FZF",
+      "description": "Fuzzy finder for the terminal",
+      "dependencies": ["base"],
+      "installer": "installers/fzf.sh",
+      "category": "tools",
+      "required": false
+    },
+    "discord": {
+      "name": "Discord",
+      "description": "Voice, video and text chat app",
+      "dependencies": ["base"],
+      "installer": "installers/discord.sh",
+      "category": "apps",
+      "required": false
+    },
+    "steam": {
+      "name": "Steam",
+      "description": "Valve's game distribution platform",
+      "dependencies": ["base"],
+      "installer": "installers/steam.sh",
+      "category": "apps",
+      "required": false
+    },
+    "appimage": {
+      "name": "AppImage CLI",
+      "description": "CLI tool to install and manage AppImages (github.com/franmacke/appimage)",
+      "dependencies": ["base"],
+      "installer": "installers/appimage.sh",
+      "category": "tools",
+      "required": false
+    }
+  }
+}
