@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-DOTFILES_REPO="${DOTFILES_REPO:-https://github.com/usuario/dotfiles}"
+DOTFILES_REPO="${DOTFILES_REPO:-https://github.com/franmacke/dotfiles}"
 WORK_DIR=""
 
 # ─── cleanup ──────────────────────────────────────────────────────────────────
