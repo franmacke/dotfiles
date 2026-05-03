@@ -54,7 +54,7 @@ validate_prerequisites() {
 resolve_deps() {
   local tools="$1"
   local resolved=()
-  local queue=($tools)
+  local queue=("$tools")
   declare -A visited
 
   while (( ${#queue[@]} > 0 )); do

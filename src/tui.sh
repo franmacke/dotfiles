@@ -4,7 +4,7 @@
 # Output: space-separated tool IDs to stdout
 # Exit 0: confirmed; Exit 1: cancelled
 
-set -euo pipefail
+# set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/logger.sh"
